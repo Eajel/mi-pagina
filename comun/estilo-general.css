@@ -1,0 +1,115 @@
+BODY 			{FONT: 11px "trebuchet ms", tahoma, Geneva, Arial, Helvetica, sans-serif; COLOR: #000; font-size-adjust: 0.51; BACKGROUND-POSITION: left top; BACKGROUND-IMAGE: url(objetos/fondo.jpg); padding: 5px 0px; BACKGROUND-REPEAT: repeat-x; BACKGROUND-COLOR: #0000EE; TEXT-ALIGN: center}
+H1 			{text-indent:10px; FONT-SIZE: 18px ; COLOR: #ff8800; MARGIN-BOTTOM: 15px; MARGIN-top: 5px}
+H2 			{text-indent:5px; FONT-SIZE: 16px ; COLOR: #ff8800; MARGIN-BOTTOM: 12px; MARGIN-top: 10px}
+P 			{padding: 0px 0px 9px 0px; MARGIN: 0px; text-align:justify; text-indent:15px; FONT-SIZE: 15px}
+P.sin 			{text-indent:0px}
+P.adelante		{FONT-SIZE:12px; text-indent:0px}
+P.center		{text-align:center; text-indent:0px; FONT-SIZE: 12px}
+.cent 			{text-align:center; text-indent:0px}
+P.codigo		{text-align:center; text-indent:0px; color:blue}
+.codigo			{color:blue; }
+STRONG			{font-weight: 600 ; font-size: 15px}
+PRE			{padding:10px ; background-color:#DBDBDB}
+TEXTAREA		{padding:10px ; background-color:#DBDBDB}
+.titu			{FONT-SIZE: 18px ; COLOR: #ff8800; MARGIN-BOTTOM: 2px; FONT-WEIGHT: bold; text-indent:0px}
+CODE			{font-family:"Courier New",Courier,mono; font-size:12px; font-weight:bold ;color:blue}
+UL			{margin: 0px 50px 12px 50px}
+LI			{text-align:justify; font-size: 16px;}
+A  			{TEXT-DECORATION: none; COLOR: #000000}
+A IMG 			{BORDER-TOP-STYLE: none; BORDER-RIGHT-STYLE: none; BORDER-LEFT-STYLE: none; BORDER-BOTTOM-STYLE: none}
+A:LINK 			{}
+A:VISITED		{}
+A:HOVER 		{COLOR: #0000cc}
+A:ACTIVE		{COLOR: #0000cc}
+.left 			{FLOAT: left; 	MARGIN: 0px 9px 0px 0px}
+.right 			{FLOAT: right; 	MARGIN: 0px 0px 0px 9px}
+.paso 			{CLEAR: both; OVERFLOW: hidden; HEIGHT: 1px}
+.espacio-minimo		{DISPLAY: none}
+.enciclopedia		{font-size:12px}
+
+#contenido 		{MARGIN: 0px auto; WIDTH: 767px; TEXT-ALIGN: left}
+
+#contenido-curva-superior{BACKGROUND-IMAGE: url(objetos/contenido-curva-superior.gif); OVERFLOW: hidden; WIDTH: 767px; HEIGHT: 12px}
+
+#banners 		{BORDER-RIGHT: #000 1px solid; BACKGROUND-color: white; BORDER-LEFT: #000 1px solid; WIDTH: auto; HEIGHT: 72px; TEXT-ALIGN:center}
+#banner1 		{WIDTH: 274px;	FLOAT: left}
+#banner2 		{WIDTH: 490px;	FLOAT: right}
+
+#lenguetas 		{BACKGROUND-IMAGE:  url(../comun/objetos/lenguetas-fondo.gif); BORDER-RIGHT: black 1px solid; BACKGROUND-POSITION: left bottom; BORDER-LEFT: black 1px solid; WIDTH: auto; BACKGROUND-REPEAT: repeat-x; HEIGHT: 70px; BACKGROUND-COLOR: white}
+
+#temas-arriba 		{MARGIN: 0px 15px; WIDTH: 735px}
+#temas-arriba DIV 	{FLOAT: left; OVERFLOW: hidden; WIDTH: 146px; HEIGHT: 22px; TEXT-ALIGN: center; BACKGROUND-IMAGE: url(objetos/tema-arriba-inactivo.gif)}
+#temas-arriba DIV A 	{DISPLAY: block; COLOR: #000; LINE-HEIGHT: 32px; COLOR: black}
+#temas-arriba DIV A:LINK	{}
+#temas-arriba DIV A:VISITED	{}
+#temas-arriba DIV A:HOVER 	{FONT-WEIGHT: bold}
+#temas-arriba DIV A:ACTIVE 	{COLOR: red}
+
+#temas-abajo 		{MARGIN: 0px 15px; WIDTH: 735px}
+#temas-abajo DIV 	{BACKGROUND-IMAGE:  url(../comun/objetos/tema-abajo-inactivo.gif); FLOAT: left; OVERFLOW: hidden; WIDTH: 146px; HEIGHT: 31px; TEXT-ALIGN: center}
+#temas-abajo DIV A 	{DISPLAY: block; COLOR: #000; LINE-HEIGHT: 32px; COLOR: black}
+#temas-abajo DIV A:LINK	{}
+#temas-abajo DIV A:VISITED	{}
+#temas-abajo DIV A:HOVER 	{FONT-WEIGHT: bold}
+#temas-abajo DIV A:ACTIVE 	{COLOR: red}
+
+#apartados 		{clear:both}
+#apartados A 		{DISPLAY: block; FLOAT: left; MARGIN: 0px 15px; LINE-HEIGHT: 12px; COLOR: blue}
+#apartados A:LINK	{}
+#apartados A:VISITED	{}
+#apartados A:HOVER 	{FONT-WEIGHT: bold}
+#apartados A:ACTIVE 	{COLOR: red}
+
+#navegador 		{BORDER-RIGHT: #000000 1px solid; padding: 1px 0px 1px 0px ; BORDER-LEFT: #000000 1px solid; WIDTH: auto; BORDER-BOTTOM: #000000 1px solid; BACKGROUND-COLOR: white; TEXT-ALIGN: center}
+#navegador 		{BACKGROUND-COLOR: #fef1c3}
+#navegador #buscador 	{MARGIN-TOP: 5px; FLOAT: left; WIDTH: 545px; TEXT-ALIGN: center}
+#navegador .left	{BACKGROUND-POSITION: right top; 	FLOAT: left; BACKGROUND-IMAGE: url(objetos/punto-separacion.gif); MARGIN: 0px 0px 0px 0px; WIDTH: 110px; BACKGROUND-REPEAT: repeat-y; TEXT-ALIGN: left}
+#navegador .right 	{BACKGROUND-POSITION: left top; 	FLOAT: left; BACKGROUND-IMAGE: url(objetos/punto-separacion.gif); MARGIN: 0px 0px 0px 0px; WIDTH: 110px; BACKGROUND-REPEAT: repeat-y; TEXT-ALIGN: right}
+#navegador P 		{PADDING: 0px 0px 0px 0px; MARGIN: 2px 10px 0px ; HEIGHT: 32px}
+#navegador A 		{TEXT-DECORATION: none}
+
+#cuerpo 		{BACKGROUND: white; BORDER-RIGHT: #000 1px solid; BORDER-LEFT: #000 1px solid; WIDTH: auto; PADDING: 3px 2px 0px 0px}
+
+#cuerpo-izq 		{clear:both ; FLOAT: left; WIDTH: 132px}
+#cuerpo-izq .caja H1 	{text-indent:0px; FONT-SIZE: 14px ; MARGIN-BOTTOM: 5px; BACKGROUND-color:  white; BACKGROUND-IMAGE: url(objetos/cuadro-menu-curva-sup-clip.gif); PADDING: 15px 9px 4px 9px; BACKGROUND-POSITION: left top; FONT-WEIGHT: bold; MARGIN: 0px ; LINE-HEIGHT: 13px; TEXT-ALIGN: left; COLOR: BLACK}
+#cuerpo-izq .caja 	{BACKGROUND-POSITION: left bottom; BACKGROUND-IMAGE: url(objetos/fondo-menus.gif); PADDING-BOTTOM: 5px; MARGIN: 0px 3px 3px; OVERFLOW: hidden; WIDTH: auto; BACKGROUND-REPEAT: no-repeat; TEXT-ALIGN: left}
+#cuerpo-izq .caja  P 	{MARGIN: 6px; FONT-SIZE:10px; text-indent:5px}
+#cuerpo-izq .caja  DIV 	{PADDING: 3px 3px 3px 3px; BACKGROUND-IMAGE: url(objetos/punto-separacion.gif); BACKGROUND-REPEAT: repeat-x}
+#cuerpo-izq .caja  A 	{DISPLAY: block; BACKGROUND-POSITION: 0px 2px; PADDING-LEFT: 13px; BACKGROUND-IMAGE:  url(objetos/boton-menus.gif); MARGIN-LEFT: 0px; LINE-HEIGHT: 14px; BACKGROUND-REPEAT: no-repeat}
+#cuerpo-izq .caja  A.sub{BACKGROUND-POSITION: 10px 2px; PADDING-LEFT: 22px; MARGIN-LEFT: 0px; LINE-HEIGHT: 14px; BACKGROUND-REPEAT: no-repeat}
+#cuerpo-izq .caja-google{MARGIN: 3px 5px 0px; OVERFLOW: hidden; WIDTH: auto; BACKGROUND-REPEAT: no-repeat; TEXT-ALIGN: left}
+#cuerpo-izq .caja-sin 	{PADDING: 0px; MARGIN: 3px 3px 5px 3px; BACKGROUND-IMAGE: url(objetos/cuadro-menu-curva-sup-noclip.gif); OVERFLOW: hidden; WIDTH: auto; BACKGROUND-REPEAT: no-repeat}
+#cuerpo-izq .caja-sin A {PADDING: 3px 3px 3px 3px; MARGIN: 0px; DISPLAY: block; LINE-HEIGHT: 12px; TEXT-ALIGN: center}
+
+#cuerpo-izq .caja-referencias 	{PADDING: 3px 3px 3px 3px; MARGIN: 3px 3px 5px 3px; OVERFLOW: hidden; WIDTH: auto}
+#antiguacuerpo-izq .caja-referencias 	{PADDING: 3px 3px 3px 3px; MARGIN: 3px 3px 5px 3px; BACKGROUND-IMAGE: url(objetos/cuadro-menu-referencias.gif); OVERFLOW: hidden; WIDTH: auto; BACKGROUND-REPEAT: no-repeat}
+
+
+#cuerpo-cent 		{FLOAT: left; WIDTH: 625px}
+
+#cuerpo-central-curva-sup 	{BACKGROUND-IMAGE: url(objetos/curva-libreta-comp.gif);  WIDTH: auto; HEIGHT: 15px; BACKGROUND-POSITION: left top; MARGIN: 0px; WIDTH: auto; BACKGROUND-REPEAT: no-repeat}
+#contenidos 		{BORDER-RIGHT: #838383 1px solid; BACKGROUND: #fff; BORDER-LEFT: #838383 1px solid; PADDING: 0px 10px 0px 10px;  WIDTH: auto}
+#contenidos A		{FONT-WEIGHT: 600 ; color:#6666FF}
+#contenidos A:hover	{text-decoration: underline}
+#foto1 		        {display:block ; float: left; text-align: center WIDTH: 490px; padding:10px ;}
+#foto2 		        {display:block ; float: right; text-align: center WIDTH: 735px; padding:10px ;}
+#cuerpo-central-curva-inf 	{BACKGROUND-IMAGE: url(objetos/curva-txt-inf-comp.gif); MARGIN-BOTTOM: 2px; OVERFLOW: hidden; HEIGHT: 9px}
+
+#opciones-inferior 	{BORDER: #000000 1px solid; WIDTH: auto; PADDING-TOP: 1px; BACKGROUND-COLOR: white; TEXT-ALIGN: center}
+#uno			{FLOAT: left;  WIDTH: 120px; MARGIN-RIGHT: 28px; 	BACKGROUND-REPEAT: repeat-y; 	TEXT-ALIGN: center}
+#dos			{FLOAT: left;  WIDTH: 469px; MARGIN-BOTTOM: 2px; 	margin-top:1px; 		TEXT-ALIGN: center}
+#tres 			{FLOAT: left;  WIDTH: 120px; MARGIN-LEFT:  28px;  	BACKGROUND-REPEAT: repeat-y; 	TEXT-ALIGN: center}
+#uno IMG, #tres IMG	{margin-bottom:3px}
+
+#opciones-inferior A 	{FONT-SIZE: 12px; DISPLAY: block; LINE-HEIGHT: 15px}
+#opciones-inferior A:LINK	{}
+#opciones-inferior A:VISITED 	{}
+#opciones-inferior A:HOVER 	{}
+#opciones-inferior A:ACTIVE 	{COLOR: blue}
+
+#pie 			{BORDER-RIGHT: #000000 1px solid; BORDER-LEFT: #000000 1px solid; WIDTH: auto; BACKGROUND-COLOR: white; TEXT-ALIGN: center}
+#contador 		{FLOAT: left;	WIDTH:  80px; TEXT-ALIGN:  right;  FONT-SIZE: 9px; 		}
+#cita 			{FLOAT: left;	WIDTH: 527px; TEXT-ALIGN: center;  FONT-SIZE: 9px; COLOR:black	}
+#copyright 		{FLOAT: left; 	WIDTH: 158px; TEXT-ALIGN: center;  FONT-SIZE: 9px; COLOR:black	}
+
+#contenido-curva-inferior {BACKGROUND-IMAGE: url(objetos/curva-final-total.gif); OVERFLOW: hidden; WIDTH: 767px; HEIGHT: 12px}

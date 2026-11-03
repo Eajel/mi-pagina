@@ -1,0 +1,146 @@
+;*********************************************************************
+;*                                                                   *
+;*   Paquete de rutinas de Arquitectura para su uso con              *
+;*   Autocad versión 2000.                                           *
+;*                                                                   *
+;*   Realizado por Javier Erce Lizarraga                             *     
+;*   Avda. de los Reyes Católicos nº 17 - 28280 El Escorial (Madrid) *  
+;*   (Tfno. 91-890.05.85)  (javiererce@arquired.es)                  *
+;*                                                                   *
+;*   Versión 1.15 (Marzo de 2.000)                                   *
+;*   (Para Autocad 2000)                                             *
+;*                                                                   *
+;*   El autor ofrece el paquete de Arquitectura completo, para que   *
+;*   cualquier usuario lo pueda utilizar y usar libremente. Y si     *
+;*   se decide a utilizarlo y quiere estar al día de las  últimas    *
+;*   actualizaciones de éste y otros programas LISP de Arquitec-     *
+;*   tura para AutoCad, podeis pasaros de vez en cuando por la web   *
+;*   donde se irán poniendo las novedades.                           *
+;*                                                                   *
+;*********************************************************************
+;*                                                                   *
+;*                      GENERALIDADES                                *
+;*                                                                   *                                
+;*  Este paquete parte de las siguientes premisas:                   *
+;*  Se trabaja en metros, es decir una unidad de dibujo es un        *
+;*  metro.                                                           *
+;*  Las paredes y muros deben de estar en una capa llamada           *
+;*  MUROS y en color verde.                                          *
+;*  Para realizar las paredes y muros se puede usar la orden         *
+;*  DLINE.LSP de AutoCaD en este paquete se incluye una versión      *
+;*  de dicha rutina modificada porque la versión original de         *
+;*  Autocad 12 en español tiene muchos fallos.                       *
+;*  Todas las rutinas crean sus propias capas, a excepción de        *
+;*  DLINE.                                                           *
+;*                                                                   *
+;*********************************************************************
+;*                                                                   *
+;*                      PUERTA.LSP                                   *
+;*                                                                   *                                
+;*  Este programa dibuja puertas de 1 ó 2 hojas con hojas            *
+;*  iguales o desiguales en paredes.                                 *
+;*  Las coloca en una capa llamada CARP en color blanco.             *
+;*  Crea una capa auxiliar CARP_AUX para su uso con el               *
+;*  programa CALSUP.LSP de cálculo de superficies.                   *
+;*  Conviene borrar las puertas con el programa BORRCARP.LSP         *
+;*  para que se borren también las líneas auxiliares de la           *
+;*  capa CARP_AUX que están ocultas.                                 *
+;*                                                                   *
+;*********************************************************************
+;*                                                                   *
+;*                        VENTANA.LSP                                *
+;*                                                                   *
+;*  Este programa dibuja ventanas abatibles y correderas en          *
+;*  las paredes.                                                     *
+;*  Las coloca en una capa llamada CARP en color blanco.             *
+;*  Crea una capa auxiliar CARP_AUX para su uso con el               *
+;*  programa CALSUP.LSP de cálculo de superficies.                   *
+;*  Conviene borrar las ventanas con el programa BORRCARP.LSP        *
+;*  para que se borren también las líneas auxiliares de la           *
+;*  capa CARP_AUX que están ocultas.                                 *
+;*                                                                   *
+;*********************************************************************  
+;*                                                                   *
+;*                        ARMARIO.LSP                                *
+;*                                                                   *
+;*  Este programa dibuja armarios abatibles y correderos             *
+;*  en las paredes y los coloca en una capa llamada                  *
+;*  CARP con color blanco. Funciona similar a puertas y ventanas.    *
+;*                                                                   *
+;*********************************************************************  
+;*                                                                   *
+;*                        BORRCARP.LSP                               *
+;*                                                                   *
+;*  Este programa permite borrar las carpinterias generadas          *
+;*  con las rutinas anteriores, y elimina las lineas auxilia-        *
+;*  res de la capa CARP_AUX que están ocultas y suelda las           *
+;*  líneas de la pared.                                              *
+;*                                                                   *
+;*********************************************************************  
+;*                                                                   *
+;*                           COTAC.LSP                               *           *
+;*                                                                   *
+;* Esta función acota todas las líneas comprendidas entre dos puntos *
+;* y las situa en el tercer punto marcado, en modo asociativo.       *
+;* Permite añadir líneas a las seleccionadas.                        *
+;* Permite eliminar líneas de las seleccionadas.                     *
+;* Permite tolerancia de acotación, por debajo de la cual no acota.  *
+;* Permite definir la longitud de las líneas de referencia.          *
+;* Si está sin seleccionar un estilo de acotación, inserta el dibujo *
+;* cotas.dwg y elige el estilo cota50 (escala 1:50).                 *
+;* Coloca las cotas en la capa COTAS.                                *
+;* Entrando en el dibujo COTAS.DWG se pueden personalizar el estilo  *
+;* de acotación.                                                     *
+;*                                                                   *
+;*********************************************************************
+;*                                                                   *
+;*                       CALSUP.LSP                                  *
+;*                                                                   *
+;*  Esta función calcula el perímetro, superficie y volumen de       *   
+;*  cualquier recinto cerrado, seleccionando un punto interior.      *
+;*  coloca el perímetro en la capa perímetro                         *
+;*  coloca la superficie en la capa superficie                       *
+;*  y el volumen en la capa volumen.                                 *
+;*  La primera vez que se usa, durante la misma sesión, pide la      * 
+;*  altura para rotular los textos.                                  *
+;*                                                                   *
+;*********************************************************************
+;*                                                                   *
+;*                       CALCULA.LSP                                 *
+;*                                                                   *
+;*  Esta función presenta una calculadora en pantalla para realizar  *   
+;*  distintas operaciones sin tener que salir de autocad.            *
+;*                                                                   *
+;*********************************************************************
+;*                                                                   *
+;*                       ECRUCE.LSP                                  *
+;*                                                                   *
+;*  Esta función realiza la limpieza de un cruce de muros en esquina *   
+;*  mediante su selección con una ventana.                           *
+;*                                                                   *
+;*********************************************************************
+;*                                                                   *
+;*                       TCRUCE.LSP                                  *
+;*                                                                   *
+;*  Esta función realiza la limpieza de un cruce de muros en T       *   
+;*  mediante su selección con una ventana.                           *
+;*                                                                   *
+;*********************************************************************
+;*                                                                   *
+;*                       XCRUCE.LSP                                  *
+;*                                                                   *
+;*  Esta función realiza la limpieza de un cruce de muros en X       *   
+;*  mediante su selección con una ventana.                           *
+;*                                                                   *
+;*********************************************************************
+;*                                                                   *
+;*                        CADJEL.MNS                                 *
+;*                                                                   *
+;*  Se adjunta este listado para poderlo incorporar a los menus des- *   
+;*  plegables como un pop más con todas las ordenes, mediante la     *
+;*  orden _menuload. Lleva barra de herramientas incorporada.        *
+;*                                                                   *
+;*********************************************************************
+
+Para poder usar convenientemente estas rutinas se deben de copiar en el
+directorio SUPPORT de autocad.

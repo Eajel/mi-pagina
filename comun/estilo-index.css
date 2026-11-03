@@ -1,0 +1,53 @@
+BODY 			{FONT: 11px "trebuchet ms", tahoma, Geneva, Arial, Helvetica, sans-serif; COLOR: #000; font-size-adjust: 0.51; BACKGROUND-POSITION: left top; PADDING: 5px 0px;BACKGROUND-COLOR: #0000EE; TEXT-ALIGN: center}
+P 			{PADDING-RIGHT: 5px; PADDING-LEFT: 5px; PADDING-BOTTOM: 4px; MARGIN: 0px; PADDING-TOP: 0px; LINE-HEIGHT:18px; text-align:justify;text-indent:15px; FONT-SIZE: 15px}
+h1			{FONT-SIZE: 12px; color:blue ; PADDING-BOTTOM: 0px; MARGIN: 0px}
+h2			{FONT-SIZE: 16px; color:blue ; PADDING-BOTTOM: 5px; MARGIN: 0px}
+A  			{TEXT-DECORATION: none; COLOR: #000000}
+A IMG			{BORDER-TOP-STYLE: none; BORDER-RIGHT-STYLE: none; BORDER-LEFT-STYLE: none; BORDER-BOTTOM-STYLE: none}
+.paso 			{CLEAR: both; OVERFLOW: hidden; HEIGHT: 1px}
+BR			{FONT-SIZE: 10px; PADDING-BOTTOM: 0px; MARGIN: 0px}
+#contenido 		{MARGIN: 0px auto; WIDTH: 769px; BACKGROUND-COLOR: white;}
+#contenido-curva-superior {BACKGROUND-IMAGE: url(objetos/contenido-curva-superior.gif); OVERFLOW: hidden; WIDTH: 767px; HEIGHT: 12px}
+#banners 		{BORDER-RIGHT: #000 1px solid; BACKGROUND-color: white; BORDER-LEFT: #000 1px solid; WIDTH: auto; HEIGHT: 72px; TEXT-ALIGN:center}
+#banner1		{WIDTH: 274px;	FLOAT: left}
+#banner2		{WIDTH: 490px;	FLOAT: right}
+#lenguetas 		{BORDER-RIGHT: black 1px solid;  BACKGROUND-POSITION: left top; BORDER-LEFT: black 1px solid; WIDTH: auto; HEIGHT: 30px; BACKGROUND-COLOR: white}
+#lenguetas P 		{MARGIN-TOP: 0PX; COLOR: blue; TEXT-ALIGN:center;  TEXT-INDENT:0px; FONT-SIZE: 16px; FONT-WEIGHT: bold}
+#cuerpo 		{BACKGROUND-COLOR: white; BORDER-RIGHT: #000 1px solid; BORDER-LEFT: #000 1px solid; WIDTH: auto; PADDING-TOP: 0px; PADDING-LEFT: 1px}
+#cuerpo-izq 		{FLOAT: left;  MARGIN-LEFT: 2px; MARGIN-RIGHT: 2px; MARGIN-TOP: 0px; WIDTH: 141px }
+#cuerpo-cent 		{FLOAT: left;  MARGIN-LEFT: 2px; MARGIN-RIGHT: 2px; MARGIN-TOP: 0px; WIDTH: 465px }
+#cuerpo-der 		{FLOAT: left;  MARGIN-LEFT: 2px; MARGIN-RIGHT: 0px; MARGIN-TOP: 0px; WIDTH: 141px }
+.cabecera-lateral 	{BACKGROUND-IMAGE:  url(objetos/cabecera-lateral.gif)	; HEIGHT: 20px;	WIDTH: auto}
+#cabecera-central 	{BACKGROUND-IMAGE:  url(objetos/cabecera-central.gif)	; HEIGHT: 20px;	WIDTH: auto}
+.icontenido		{BORDER-RIGHT: #838383 1px solid; BACKGROUND: white; BORDER-LEFT: #838383 1px solid; WIDTH: auto}
+.espacio-minimo		{DISPLAY: none}
+.columna-central A	{TEXT-DECORATION: none ;FONT-WEIGHT: 600 ; color:white}
+#cuerpo-izq A  		{DISPLAY: block; text-align:justify}
+#cuerpo-izq A:link 	{}
+#cuerpo-izq A:visited 	{}
+#cuerpo-izq A:hover 	{BACKGROUND: #E4E4E4}
+#cuerpo-izq A:active	{BACKGROUND: #FEF9CF}
+#cuerpo-der A  		{DISPLAY: block; text-align:justify}
+#cuerpo-der A:link 	{}
+#cuerpo-der A:visited 	{}
+#cuerpo-der A:hover 	{BACKGROUND: #E4E4E4}
+#cuerpo-der A:active	{BACKGROUND: #FEF9CF}
+.columna-lateral 	{MARGIN: 0px 5px; WIDTH: auto}
+.columna-lateral A 	{BORDER-top: #838383 1px solid; HEIGHT: 129px}
+.columna-central  	{MARGIN: 0px 5px; WIDTH: auto; 	HEIGHT: 645px}
+.ipie-lateral		{BACKGROUND-IMAGE:  url(objetos/index-pie-lateral.gif); MARGIN-BOTTOM: 0px; OVERFLOW: hidden; HEIGHT: 9px}
+#ipie-central 		{BACKGROUND-IMAGE:  url(objetos/index-pie-central.gif); MARGIN-BOTTOM: 0px; OVERFLOW: hidden; HEIGHT: 9px}
+#opciones-inferior 	{BORDER-RIGHT: #000000 1px solid; 	BORDER-TOP: #000000 1px solid;  BORDER-LEFT: #000000 1px solid; WIDTH: auto; PADDING-TOP: 1px; BORDER-BOTTOM: #000000 1px solid; BACKGROUND-COLOR: white; TEXT-ALIGN: center}
+#uno			{FLOAT: left;  WIDTH: 120px; MARGIN-RIGHT: 28px; 	BACKGROUND-REPEAT: repeat-y; 	TEXT-ALIGN: center}
+#dos			{FLOAT: left;  WIDTH: 469px; MARGIN-BOTTOM: 2px; margin-top:1px; 			TEXT-ALIGN: center}
+#tres 			{FLOAT: left;  WIDTH: 120px; MARGIN-LEFT:  28px;  	BACKGROUND-REPEAT: repeat-y; 	TEXT-ALIGN: center}
+#uno IMG, #tres IMG	{margin-bottom:3px}
+#opciones-inferior A 	{FONT-SIZE: 12px; DISPLAY: block; LINE-HEIGHT: 15px}
+#opciones-inferior A:LINKk	{}
+#opciones-inferior A:VISITED 	{}
+#opciones-inferior A:HOVER 	{}
+#opciones-inferior A:ACTIVE 	{COLOR: blue}
+#pie 			{BORDER-RIGHT: #000000 1px solid; BORDER-LEFT: #000000 1px solid; WIDTH: auto; BACKGROUND-COLOR: white; TEXT-ALIGN: center}
+#contador 		{FLOAT: left;	WIDTH:  80px; TEXT-ALIGN:  right;  FONT-SIZE: 9px; 		}
+#copyright 		{FLOAT: left; 	WIDTH: 672px; TEXT-ALIGN: center;	FONT-SIZE: 12px; COLOR:black}
+#contenido-curva-inferior 	{BACKGROUND-IMAGE: url(objetos/curva-final-total.gif); OVERFLOW: hidden; WIDTH: 767px; HEIGHT: 12px}
